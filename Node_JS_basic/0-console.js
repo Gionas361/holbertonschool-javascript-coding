@@ -1,7 +1,6 @@
 /* eslint-disable */
-export default function displayMessage(message) {
-  if (message == "") {
-    return null;
-  }
-  return process.stdout.write(message);
+function displayMessage(message) {
+    console.log(message);
 }
+
+module.exports = displayMessage;
